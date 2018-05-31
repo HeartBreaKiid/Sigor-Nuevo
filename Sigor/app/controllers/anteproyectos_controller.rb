@@ -5,9 +5,15 @@ class AnteproyectosController < ApplicationController
   respond_to :html
 
   def index
+    if current_user.TipoUsuario == "Jefe V.P"
+  @anteproyectos = Anteproyecto.all
+elsif current_user.TipoUsuario == "M.Academia"
+@anteproyectos = Anteproyecto.all
+else
   @anteproyectos = Anteproyecto.where(user_id: current_user.id)
     respond_with(@anteproyectos)
   end
+end
 
   def show
     respond_with(@anteproyecto)
@@ -23,12 +29,19 @@ class AnteproyectosController < ApplicationController
 
   def create
     @anteproyecto =current_user.anteproyectos.build(anteproyecto_params)
+    @anteproyecto.update(:Estatus => "Enviado")
     @anteproyecto.save
     respond_with(@anteproyecto)
   end
 
   def update
     @anteproyecto.update(anteproyecto_params)
+    if current_user.TipoUsuario == "Jefe V.P"
+    @anteproyecto.update(:Estatus => "En revisión")
+    end
+    if current_user.TipoUsuario == "M.Academia"
+    @anteproyecto.update(:Estatus => "Aprobado")
+    end
     respond_with(@anteproyecto)
   end
 

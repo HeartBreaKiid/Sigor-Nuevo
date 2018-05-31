@@ -1,0 +1,47 @@
+<h1>Listing anteproyectos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>usuario</th>
+      <th>Objetivo</th>
+      <th>Justificacion</th>
+      <th>Cronograma</th>
+      <th>Descripcionactividades</th>
+      <th>Nombreemp</th>
+      <th>Direccionemp</th>
+      <th>Telefonoemp</th>
+      <th>Comentarios</th>
+      <th>Estatus</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @anteproyectos.each do |anteproyecto| %>
+      <tr>
+        <td><%= anteproyecto.Nombre %></td>
+        <td><%= anteproyecto.user.email %></td>
+        <td><%= anteproyecto.Objetivo %></td>
+        <td><%= anteproyecto.Justificacion %></td>
+        <td><%= anteproyecto.Cronograma %></td>
+        <td><%= anteproyecto.DescripcionActividades %></td>
+        <td><%= anteproyecto.NombreEmp %></td>
+        <td><%= anteproyecto.DireccionEmp %></td>
+        <td><%= anteproyecto.TelefonoEmp %></td>
+        <td><%= anteproyecto.Comentarios %></td>
+        <td><%= anteproyecto.Estatus %></td>
+        <td><%= link_to 'Show', anteproyecto %></td>
+        <td><%= link_to 'Edit', edit_anteproyecto_path(anteproyecto) %></td>
+        <td><%= link_to 'Destroy', anteproyecto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Anteproyecto', new_anteproyecto_path %>

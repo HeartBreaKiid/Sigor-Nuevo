@@ -1,0 +1,57 @@
+<%= form_for(@anteproyecto) do |f| %>
+  <% if @anteproyecto.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@anteproyecto.errors.count, "error") %> prohibited this anteproyecto from being saved:</h2>
+
+      <ul>
+      <% @anteproyecto.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Nombre %><br>
+    <%= f.text_field :Nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :Objetivo %><br>
+    <%= f.text_field :Objetivo %>
+  </div>
+  <div class="field">
+    <%= f.label :Justificacion %><br>
+    <%= f.text_field :Justificacion %>
+  </div>
+  <div class="field">
+    <%= f.label :Cronograma %><br>
+    <%= f.text_field :Cronograma %>
+  </div>
+  <div class="field">
+    <%= f.label :DescripcionActividades %><br>
+    <%= f.text_field :DescripcionActividades %>
+  </div>
+  <div class="field">
+    <%= f.label :NombreEmp %><br>
+    <%= f.text_field :NombreEmp %>
+  </div>
+  <div class="field">
+    <%= f.label :DireccionEmp %><br>
+    <%= f.text_field :DireccionEmp %>
+  </div>
+  <div class="field">
+    <%= f.label :TelefonoEmp %><br>
+    <%= f.text_field :TelefonoEmp %>
+  </div>
+  <div class="field">
+    <%= f.label :Comentarios %><br>
+    <%= f.text_field :Comentarios %>
+  </div>
+  <div class="field">
+    <%= f.label :Estatus %><br>
+    <%= f.text_field :Estatus %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

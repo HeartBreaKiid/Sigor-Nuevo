@@ -1,5 +1,5 @@
 <% if user_signed_in? %>
-Estas logeao Como: <strong><%= current_user.email%></strong>.
+Estas logeao Como: <strong><%= current_user.TipoUsuario%></strong>.
 <%= link_to 'Editar Perfil', edit_user_registration_path, :class => 'navbar-link' %> |
 <%= link_to "Cerrar Sesion", destroy_user_session_path, method: :get, :class => 'navbar-link'  %>
 <% else %>

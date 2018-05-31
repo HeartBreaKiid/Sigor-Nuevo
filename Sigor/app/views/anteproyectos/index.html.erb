@@ -43,5 +43,6 @@
 </table>
 
 <br>
-
+<% if current_user.TipoUsuario == "Alumno" %>
 <%= link_to 'New Anteproyecto', new_anteproyecto_path %>
+<%end%>

@@ -1,0 +1,215 @@
+.wrapsignup {
+width: 90%;
+max-width: 400px;
+padding: 40px;
+margin: auto;
+margin-right: 420px;
+background: #fff;
+box-shadow: 0px 0px 3px #c7c7c7; }
+
+.formusignup {
+  width: 100%;
+  color: #000;
+  padding: 60px;
+    margin: auto;
+  }
+  .fieldsignup {
+    width: 100%;
+    color: #000;
+    margin: auto; }
+ .fieldsignup {
+     position: relative;
+     margin-bottom: 20px; }
+ .fieldsignup input[type="text"],
+ .fieldsignup input[type="email"],
+ .fieldsignup input[type="password"] {
+       font-family: "Roboto";
+       font-size: 16px;
+       color: #303F9F;
+       width: 100%;
+       outline: none;
+       padding: 15px;
+       background: none;
+       border: none;
+       border-bottom: 2px solid #BBDEFB; }
+.fieldsignup label {
+       color: #303F9F; }
+.actionssingup input[type="submit"] {
+     background: #ea2d2d;
+     border-radius: 15px;
+     border: 2px solid #f2f2f2;
+     color: #fff;
+     cursor: pointer;
+     display: inline-block;
+     font-family: "Roboto";
+     font-size: 16px;
+     padding: 15px;
+     width: 100%;
+     -webkit-transition: all 0.3s ease;
+     -o-transition: all 0.3s ease;
+     transition: all 0.3s ease; }
+  .actionssingup input[type="submit"]:hover {
+       background: #f90000; }
+
+/* Css para el LOGIN */
+.wraplogin {
+  width: 90%;
+  max-width: 400px;
+  padding: 40px;
+  margin: auto;
+  margin-right: 420px;
+  background: #fff;
+  box-shadow: 0px 0px 3px #c7c7c7;
+}
+.formulogin{
+  width: 100%;
+  color: #000;
+  padding: 60px;
+    margin: auto;
+}
+       .fieldlogin {
+         width: 100%;
+         color: #000;
+         margin: auto; }
+        .fieldlogin {
+            position: relative;
+            margin-bottom: 20px; }
+        .fieldlogin input[type="email"],
+        .fieldlogin input[type="password"] {
+              font-family: "Roboto";
+              font-size: 16px;
+              color: #303F9F;
+              width: 100%;
+              outline: none;
+              padding: 15px;
+              background: none;
+              border: none;
+              border-bottom: 2px solid #BBDEFB; }
+       .fieldlogin label {
+              color: #303F9F; }
+       .actionslogin input[type="submit"] {
+            background: #ea2d2d;
+           border-radius: 15px;
+            border: 2px solid #f2f2f2;
+            color: #fff;
+            cursor: pointer;
+            display: inline-block;
+            font-family: "Roboto";
+            font-size: 16px;
+            padding: 15px;
+            width: 100%;
+            -webkit-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease; }
+         .actionslogin input[type="submit"]:hover {
+              background: #f90000; }
+
+  /* Css para EDIT PERFIL */
+  .wrapeditperfil {
+    width: 90%;
+    max-width: 400px;
+    padding: 40px;
+    margin: auto;
+    margin-right: 420px;
+    background: #fff;
+    box-shadow: 0px 0px 3px #c7c7c7;
+   }
+
+  .editperfil {
+    width: 100%;
+    color: #000;
+    padding: 60px;
+      margin: auto; }
+
+      .fieldeditperfil {
+        width: 100%;
+        color: #000;
+        margin: auto; }
+   .fieldeditperfil {
+       position: relative;
+       margin-bottom: 20px; }
+   .fieldeditperfil input[type="text"],
+   .fieldeditperfil input[type="email"],
+   .fieldeditperfil input[type="password"] {
+         font-family: "Roboto";
+         font-size: 16px;
+         color: #303F9F;
+         width: 100%;
+         outline: none;
+         padding: 15px;
+         background: none;
+         border: none;
+         border-bottom: 2px solid #BBDEFB; }
+  .fieldeditperfil label {
+         color: #ad0e0e; }
+  .actionseditperfil input[type="submit"] {
+       background: #ea2d2d;
+       border-radius: 15px;
+       border: 2px solid #f2f2f2;
+       color: #fff;
+       cursor: pointer;
+       display: inline-block;
+       font-family: "Roboto";
+       font-size: 16px;
+       padding: 15px;
+       width: 100%;
+       -webkit-transition: all 0.3s ease;
+       -o-transition: all 0.3s ease;
+       transition: all 0.3s ease; }
+    .actionseditperfil input[type="submit"]:hover {
+         background: #f90000; }
+
+
+
+/* css menu principal */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  background: #fff;
+  width: 100%;
+  top:0;
+  box-shadow: 0px 4px 10px 0 rgba(22,22,22,0.2);
+}
+.menuprincipal{
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.menuprincipal .logo {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.menuprincipal .logo img{
+  vertical-align: top;
+  height: 80px;
+  cursor: pointer;
+}
+
+.menuprincipal .enlaces{
+  display: inline-block;
+  text-align: right;
+}
+
+.menuprincipal .enlaces a {
+  color:#000;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1em;
+
+}
+
+.menuprincipal .enlaces a:hover{
+  border-bottom: 5px solid #1fe8df;
+}
